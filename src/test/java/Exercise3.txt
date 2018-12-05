@@ -1,0 +1,8 @@
+- This project is Maven project, which means if you want to execute it, please use "mvn clean test" to compile and run.
+- This automation project include 2 part:
+	+ "actions" package:
+		- CommonsFunction.java: include all common functions of webdriver
+		- TwentyHomePage/ TwentyListPropertiesPage/ TwentyPropertySearchPage: 3 pages object for each page of RightMove site.
+			Tester need define variables, methods for each page and then call it into Testcase file
+			Page object will extend CommonsFunction page to re-use methods, which is created in CommonsFunction
+	+ "testcases" package: all testcases will be written in here (RightMove_01.java).
